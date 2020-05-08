@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section {
+	height: 100vh;
+	background-color: #1A1A1D;
+}
+
+.score {
+	color: #D3D3D3;
+	height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.score h2 {
+	font-size: 30px;
+}
+
+.score p {
+	text-align: center;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.intro {
+	color: white;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: opacity 0.5s ease;
+}
+
+.intro h1{
+	font-size: 50px;
+}
+
+
+.match h2{
+	margin: 50px 50px 50px 50px;
+}
+
+.intro button, .match button {
+	width: 150px;
+	height: 50px;
+	background: #FF30D6 ;
+	border: none;
+	border-radius: 25px;
+	color: #E0E0E0;
+	font-size: 20px;
+	cursor: pointer;
+	pointer-events: auto;
+	transition: opacity 0.5s ease;
+	margin: 30px 50px 30px 50px;
+
+}
+
+
+.match {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: opacity 0.5s ease 0.5s;
+}
+
+.winner{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.hands, .options{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.player-hand, .computer-hand{
+
+	width: 150px;
+	height: 150px;
+}
+
+div.fade-out{
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fade-in{
+	opacity: 1;
+	pointer-events: 1;
+}
